@@ -19,6 +19,9 @@ class GUI:
         self.t1 = tk.Text(self.root, width = 52, height = 10)
         self.t1.grid(row=1, column=0, columnspan=3)
 
+        #quit button
+        tk.Button(self.root, text="Quit", command=self.root.destroy).grid(row=2, column=0)
+
     def main(self):
         self.root.mainloop()
 
